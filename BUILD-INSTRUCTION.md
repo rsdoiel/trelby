@@ -7,8 +7,11 @@ They describing building for Raspbian, also worked for Ubuntu 17.10
 I've have updated them to match my own practices. - RSD 2017-12-17
 
 ```shell
-    sudo apt-get install xsltproc docbook-xsl python-wxtools devscripts debhelper python-all python-mock
-    git clone https://github.com/oskusalerma/trelby/ src/github.com/oskusalerma/trelby
+    sudo apt-get install xsltproc docbook-xsl \
+        python-lxml python-wxtools devscripts \
+        debhelper python-all python-mock
+    git clone https://github.com/oskusalerma/trelby/ \
+        src/github.com/oskusalerma/trelby
     cd src/github.com/oskusalerma/trelby
     vi Makefile       # See changes needed below
     vi debian/control # See changes needed below

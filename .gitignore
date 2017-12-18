@@ -1,3 +1,9 @@
 *.pyc
 *.pyo
 .trelby/
+*.gz
+*.deb
+dist/
+debian/
+build/
+MANIFEST

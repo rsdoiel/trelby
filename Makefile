@@ -15,10 +15,10 @@ dict_en.dat.gz: dict_en.dat
 	gzip -c dict_en.dat > dict_en.dat.gz
 
 manual.html: doc/*
-	make -C doc html && mv doc/manual.html .
+	make -C doc html # && mv doc/manual.html .
 
 trelby.1.gz: doc/*
-	make -C doc manpage && mv doc/trelby.1.gz .
+	make -C doc manpage # && mv doc/trelby.1.gz .
 
 rpm: dist
 	python setup.py bdist_rpm
